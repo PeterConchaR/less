@@ -3,3 +3,34 @@
 @import "fonts.less";  
 @fontBase: verdana, arial;
 @fontHeadings: 'Yanone Kaffeesatz', arial;
+
+/*
+*
+* FONTS
+ * by @dic7 (github: ivanmendoza) 
+*
+*/
+ #fonts {
+  .base(@size: 1em){
+		font:normal @size verdana, helvetica, arial, sans-serif;
+	}
+	.headings( @size : 2em){
+		font:normal ~"@{size}em/.9" 'Century Gothic', verdana, sans-serif;
+	}
+	.code( @size : 1em){
+		font:normal ~"@{size}em/1.5" 'Lucida Console', 'Consolas', 'Courier New', monospace;
+	}
+	.controls( @size : 1em){
+		font:normal ~"@{size}em/1" tahoma, sans-serif;
+	}
+}
+ 
+body{
+   #fonts  .base;
+}
+h1{ #fonts  .headings(2em);}
+h2{ #fonts  .headings(1.5em);}
+h3{ #fonts  .headings(1.2em);}
+ 
+label, input, textarea,.button{ #fonts  .controls;}
+pre, code{ #fonts  .code;}
