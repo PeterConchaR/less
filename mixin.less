@@ -28,3 +28,15 @@ p{
     background: lighten(@rojo, 20%);
   }
 } 
+
+ .boton(@fondo: #ddd, @texto: #000 ){
+  border-radius:4px;
+  border:solid 1px #aaa;
+  background:@fondo;
+  color:@texto;
+}
+
+.boton_verde{
+  /* Se envian los colores como parametros */
+  .boton(#0f0, #fff);
+} 
