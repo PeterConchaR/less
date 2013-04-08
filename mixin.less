@@ -1,0 +1,30 @@
+ .control{
+  border-radius: 4px;
+  border:solid 1px #aaa;
+  background:#eee;
+}
+
+.boton{
+  .control;
+  font-size:1em;
+}
+.panel{
+  .control;
+  padding:.5em;
+} 
+
+p{
+ font-size: 18/16em; // da como resultado font-size:1.125em
+}
+
+@rojo: #f00;
+@verde: #0f0;
+@blanco: #fff;
+
+.boton{
+  background:@rojo;
+  color:@blanco;
+  &:hover{
+    background: lighten(@rojo, 20%);
+  }
+} 
