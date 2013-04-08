@@ -34,3 +34,36 @@ h3{ #fonts  .headings(1.2em);}
  
 label, input, textarea,.button{ #fonts  .controls;}
 pre, code{ #fonts  .code;}
+
+ @magenta:     #f0f;
+@negro:       #000;
+
+.btn.magenta{
+    color:#fff;
+    background:fadeout(@magenta, 50%);
+    &:hover{
+        background:fadein(@magenta, 30%);
+    }
+}
+.btn.negro{
+    color:#fff;
+    background:@negro;
+    &:hover{
+        background:fadeout(@negro, 50%);
+    }
+} 
+ 
+
+De igual forma podemos trabajar con otras funciones de color como:
+/*
+lighten
+darken
+saturate
+desaturate
+fadein
+fadeout
+fade
+spin
+spin
+mix
+*/
